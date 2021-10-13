@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Case Study</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    </head>
+
+    <body>
+        <center>
+            <h3 id="h3">DIFFERENCE BETWEEN GOOGLE LENS & MOBILENET</h3>
+            <BR><BR>
+            <p style="letter-spacing: 1.7px; color: black; font-weight: bold;" id="p1">GOOGLE LENS <span>&nbsp;<img style="width: 8%;" id="image1" src="google_lens.png"></span></p>
+              
+                <h2>Vs</h2><BR>
+           
+           
+                    <img style="width: 20%;" id="image1" src="https://worldtelcom.net/wp-content/uploads/2021/03/mobilenet-logo.png">
+       
+       
+       <BR><BR><BR><BR>
+        <div style="background-color: grey; float: none; border-radius: 10px;" class="col-sm-6 col-xs-12">
+         <BR>   <h1>1. <span style="color: white;">Test Image</span></h1>
+            <BR><BR>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVc7TJZPfdASJOicW-wkXm08CoNrjEtD2vMw&usqp=CAU">
+                <BR><BR>
+                    <h4 style="color: yellow;">Output on google lens - Water Bottle</h4>
+           
+                        <h4 style="color: yellow;">Output on mobilenet - Water Bottle</h4>
+
+                        <hr style="width: 20%;">
+                        <div class="col-sm-6 col-xs-12"  style="background-color: white; float: none; border-radius: 10px;"><br>
+<h3>Result - Draw</h3><br>
+</div>
+<div class="col-sm-6 col-xs-12"  style="background-color: black; float: none; border-radius: 10px;"><br>
+<p style="color: white;">Thus, Both are accurate</p><br>
+</div>
+                <br><BR>
+        </div><BR>
+
+
+
+
+            <div style="background-color: grey; float: none; border-radius: 10px;" class="col-sm-6 col-xs-12">
+                <BR>   <h1>2. <span style="color: white;">Test Image</span></h1>
+                   <BR><BR>
+                       <img src="https://img3.exportersindia.com/product_images/bc-full/2019/7/4073237/canvas-shoes-1563014491-4996716.jpeg">
+                       <BR><BR>
+                           <h4 style="color: yellow;">Output on google lens - Canvas Shoes</h4>
+                  
+                               <h4 style="color: yellow;">Output on mobilenet - Running Shoes</h4>
+       
+                               <hr style="width: 20%;">
+                               <div class="col-sm-6 col-xs-12"  style="background-color: white; float: none; border-radius: 10px;"><br>
+       <h3>Result - Google Lens Wins</h3><br>
+       </div>
+       <div class="col-sm-6 col-xs-12"  style="background-color: black; float: none; border-radius: 10px;"><br>
+       <p style="color: white;">Thus, Google Lens is accurate</p><br>
+       </div>
+                       <br><BR>
+               </div>
+
+
+
+
+            <BR>
+                
+
+            <div style="background-color: grey; float: none; border-radius: 10px;" class="col-sm-6 col-xs-12">
+                <BR>   <h1>3. <span style="color: white;">Test Image</span></h1>
+                   <BR><BR>
+                       <img src="data:image/jpeg;base64,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">
+                       <BR><BR>
+                           <h4 style="color: yellow;">Output on google lens - Mobile Phone</h4>
+                  
+                               <h4 style="color: yellow;">Output on mobilenet - Telephone</h4>
+       
+                               <hr style="width: 20%;">
+                               <div class="col-sm-6 col-xs-12"  style="background-color: white; float: none; border-radius: 10px;"><br>
+       <h3>Result - Google Lens Wins</h3><br>
+       </div>
+       <div class="col-sm-6 col-xs-12"  style="background-color: black; float: none; border-radius: 10px;"><br>
+       <p style="color: white;">Thus, Google Lens is accurate</p><br>
+       </div>
+                       <br><BR>
+               </div>
+<BR>
+
+
+
+    <div style="background-color: grey; float: none; border-radius: 10px;" class="col-sm-6 col-xs-12">
+        <br><BR>
+<h3 style="color: blanchedalmond;">I have tested 3 examples of test images & in that 2 times GOOGLE LENS was accurate & both were correct at 1 test image.
+    <BR><BR><BR>
+    So, According to my Case Study Google Lens is more Accurate.
+</h3>
+        <BR><BR>
+        </div>
+
+
+            <BR>
+            <div style="background-color: darkgrey; line-height: 4px;">
+                <BR><BR><BR>
+                <h4 style="color: white;">Developed By - <span style="color: tomato; background-color: white; border-radius: 15px;">  &nbsp; Prathmesh Kale &nbsp;</span></h4>
+                <BR><BR><BR>
+            </div>
+       
+                </center>
+    </body>
+</html>
